@@ -1,38 +1,37 @@
 
 import React from 'react'
 import Button from '../utils.jsx/Button'
+import image from "../assets/5.jpg"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <section className="flex flex-col items-center justify-center text-center py-20 px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-          Welcome to MyApp
-        </h2>
-        <p className="text-gray-600 max-w-xl mb-6">
-          Build modern web applications with React and Tailwind CSS quickly and efficiently.
-        </p>
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
-          Get Started
-        </button>
+    <div className='flex flex-row gap-4 p-4'>
+      {/* section one */}
+      <section>
+        <img src={image} alt="Home Image" srcset="" className='w-full h-full object-cover ' />
+
       </section>
 
-      {/* Features Section */}
-      <section className="grid md:grid-cols-3 gap-6 px-6 pb-20">
-        <div className="bg-white p-6 rounded-2xl shadow">
-          <h3 className="text-lg font-semibold mb-2">Fast Development</h3>
-          <p className="text-gray-600">Use Tailwind utility classes to build UI faster.</p>
-        </div>
+{/* section two */}
+      <section>
+  <h1 className='text-2xl font-bold'>
+   Free Responsive Wristwatch Landing Page Template
+  </h1>
+  <p className='text-base mb-6'>Free responsive wristwatch landing page template built with Vite, React, Tailwind CSS v4, and Framer Motion. Includes hero, navbar, product grids, features, newsletter, footer, and animations. Perfect for students and businesses.!</p>
 
-        <div className="bg-white p-6 rounded-2xl shadow">
-          <h3 className="text-lg font-semibold mb-2">Responsive Design</h3>
-          <p className="text-gray-600">Looks great on all devices with minimal effort.</p>
-        </div>
-
-        <div className="bg-white p-6 rounded-2xl shadow">
-          <h3 className="text-lg font-semibold mb-2">Reusable Components</h3>
-          <p className="text-gray-600">Create scalable and maintainable components.</p>
-        </div>
+  <span className='mt-6 '>
+    <ul className='bg-gray-50 p-4 shadow-md rounded-xl'>
+      <li>Source code and assets</li>
+      <li>README with setup & deploy guides</li>
+      <li>Lifetime updates to this template</li>
+       <div className='mt-4'>
+    <button className='p-6 bg-blue-600 text-white rounded-xl mr-4'>free download</button> <button className='p-6 bg-white text-black-300 rounded-xl'>live demo</button>
+     <p>Updated 27/04/2026</p>
+   </div>
+    </ul>
+  </span>
+  
+  
       </section>
 
     </div>
