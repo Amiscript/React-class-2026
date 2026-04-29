@@ -15,7 +15,7 @@ import {Routes, Route} from 'react-router-dom'
  
 function App() {
  return (
-  <div>
+  <div className="bg-gradient-to-b from-amber-900 via-amber-500 to-amber-900 text-white ">
       <Navbar />
     <Routes>
      <Route path="/" element={<Home />}/>

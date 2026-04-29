@@ -5,7 +5,7 @@ import image from "../assets/5.jpg"
 
 export default function Home() {
   return (
-    <div className='flex flex-row gap-4 p-4'>
+    <div className='flex flex-row gap-4 p-4 '>
       {/* section one */}
       <section>
         <img src={image} alt="Home Image" srcset="" className='w-full h-full object-cover ' />
@@ -14,8 +14,8 @@ export default function Home() {
 
 {/* section two */}
       <section>
-  <h1 className='text-2xl font-bold'>
-   Free Responsive Wristwatch Landing Page Template
+  <h1 className='text-6xl font-bold'>
+   Free Responsive Wristwatch Landing <span className='text-amber-500'> Page Template</span>
   </h1>
   <p className='text-base mb-6'>Free responsive wristwatch landing page template built with Vite, React, Tailwind CSS v4, and Framer Motion. Includes hero, navbar, product grids, features, newsletter, footer, and animations. Perfect for students and businesses.!</p>
 
