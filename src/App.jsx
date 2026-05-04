@@ -2,6 +2,7 @@ import About from "./component/About"
 import Home from "./component/home"
 import Service from "./component/Service"
 import Navbar from "./component/Navbar"
+import Modal from "./component/modal"
 import Faq from "./component/Faq"
 import Footer from "./component/Footer"
 import PageNotFound from "./component/PageNotFound"
@@ -17,6 +18,7 @@ function App() {
  return (
   <div className="bg-gradient-to-b from-amber-900 via-amber-500 to-amber-900 text-white ">
       <Navbar />
+    
     <Routes>
      <Route path="/" element={<Home />}/>
      <Route path="/Faq" element={<Faq />}/>
@@ -24,7 +26,13 @@ function App() {
       <Route path="/Service" element={<Service />}/>
       <Route path="*" element={<PageNotFound />}/>
     </Routes>
+
+  <Modal />
+    
       <Footer />
+     
+ 
+
   </div>
  )
 
