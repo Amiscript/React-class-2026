@@ -7,8 +7,8 @@ import { useNavigate } from 'react-router-dom'
 export default function Navbar() {
     const navigate = useNavigate()
   return (
-    <div className=' text-black  flex items-center justify-between  shadow-lg'>
-<div className='h-20 w-20'> <img src={image} alt="" srcset="" /></div>
+    <div className=' text-white  flex items-center justify-between  shadow-lg fixed top-0 left-0 right-0 z-20 bg-amber-950'>
+<div className='h-20 w-20'> <img src={image} alt="" /></div>
   <ul className='flex justify-between items-center  gap-4 pr-60'>
       {/* <li><a href="/">Home</a></li>
       <li><a href="/About">About</a></li>

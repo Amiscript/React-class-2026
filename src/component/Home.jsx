@@ -8,7 +8,7 @@ export default function Home() {
     <div className='flex flex-row gap-4 p-4 '>
       {/* section one */}
       <section>
-        <img src={image} alt="Home Image" srcset="" className='w-full h-full object-cover ' />
+        <img src={image} alt="Home Image" className='w-full h-full object-cover ' />
 
       </section>
 

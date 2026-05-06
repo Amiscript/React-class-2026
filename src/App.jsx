@@ -8,15 +8,14 @@ import Footer from "./component/Footer"
 import PageNotFound from "./component/PageNotFound"
 import {Routes, Route} from 'react-router-dom'
 
-
-
 // props => properties
 // react router => npm install react-router-dom
 // state => useState
  
 function App() {
  return (
-  <div className="bg-gradient-to-b from-amber-900 via-amber-500 to-amber-900 text-white ">
+
+  <div className="bg-gradient-to-b from-amber-900 via-amber-500 to-amber-900 text-white relative mt-30 ">
       <Navbar />
     
     <Routes>
@@ -26,7 +25,6 @@ function App() {
       <Route path="/Service" element={<Service />}/>
       <Route path="*" element={<PageNotFound />}/>
     </Routes>
-
   <Modal />
     
       <Footer />
@@ -34,6 +32,7 @@ function App() {
  
 
   </div>
+
  )
 
 }
