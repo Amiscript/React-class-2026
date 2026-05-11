@@ -6,6 +6,8 @@ import Modal from "./component/modal"
 import Faq from "./component/Faq"
 import Footer from "./component/Footer"
 import PageNotFound from "./component/PageNotFound"
+import Grid from "./component/grid"
+import HookUsestate from "./component/HookUsestate"
 import {Routes, Route} from 'react-router-dom'
 
 // props => properties
@@ -26,6 +28,9 @@ function App() {
       <Route path="*" element={<PageNotFound />}/>
     </Routes>
   <Modal />
+
+  <Grid />
+  <HookUsestate />
     
       <Footer />
      

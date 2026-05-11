@@ -3,8 +3,10 @@ import React from 'react'
 import Button from '../utils.jsx/Button'
 import image from "../assets/5.jpg"
 
+
 export default function Home() {
   return (
+    <>
     <div className='flex flex-row gap-4 p-4 '>
       {/* section one */}
       <section>
@@ -33,7 +35,11 @@ export default function Home() {
   
   
       </section>
+    
 
     </div>
+  
+    </>
+      
   )
 }
