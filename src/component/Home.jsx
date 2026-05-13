@@ -2,6 +2,9 @@
 import React from 'react'
 import Button from '../utils.jsx/Button'
 import image from "../assets/5.jpg"
+import Modal from './modal'
+import Grid from './grid'
+import HookUsestate from './HookUsestate'
 
 
 export default function Home() {
@@ -38,6 +41,9 @@ export default function Home() {
     
 
     </div>
+    <Modal />
+  <Grid />
+  <HookUsestate />
   
     </>
       

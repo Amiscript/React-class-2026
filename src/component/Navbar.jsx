@@ -16,6 +16,7 @@ export default function Navbar() {
       <li><Link to="/">Home</Link></li>
       <li><Link to="/About">About</Link></li>
       <li><Link to="/Service">Services</Link></li>
+      <li><Link to="/Todo">Todo</Link></li>
       <Link to="/"><li>Home</li></Link>
       <button onClick={() => navigate('/')} className='bg-amber-500 text-white rounded-2xl p-2'>Get Started</button>
     </ul>
