@@ -7,22 +7,28 @@ import {useState} from 'react'
 
 
 const Todo = () => {
-const[todo, setTodo] = useState("")
+  const [firstname, setFirstname] = useState("")
+  const [lastname, setLastname] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
 
 //assignment create an input field of firstname, lastname, email and password and capture the value of each input field in a state variable and display it on the UI
 
-const getvalue =(event)=>{
-    setTodo(event.target.value)
-}
   return (
-    <div className="flex justify-center">
-        {todo}
-      <section >
-        <input type="text" value={todo} onChange={getvalue } className="border-8 border-green-400 p-8 text-3xl"/>
+    <div  className='flex flex-col gap-4 p-4'>
+      <label htmlFor="">First Name</label>
+      <input type="text" value={firstname}  onChange={(event) => setFirstname(event.target.value)} />
+      {firstname}
+  
+      <label htmlFor="">Last Name</label>
+      <input type="text" value={lastname} onChange={(event) => setLastname(event.target.value)} />
 
-
-      </section>
-      <button className="bg-orange-500  p-6  rounded-lg">Add Todo</button>
+      {lastname}
+      <label htmlFor="">Email</label>
+      <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
+      <label htmlFor="">Password</label>
+      <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
 
     </div>
   );

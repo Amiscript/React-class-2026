@@ -1,11 +1,13 @@
 import React from 'react'
 import image from "../assets/5.jpg"
 import { Link } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import Drawer from '../Materials/Drawer'
+
 
 
 export default function Navbar() {
-    const navigate = useNavigate()
+  
+  
   return (
     <div className=' text-white  flex items-center justify-between  shadow-lg fixed top-0 left-0 right-0 z-20 bg-amber-950'>
 <div className='h-20 w-20'> <img src={image} alt="" /></div>
@@ -18,6 +20,7 @@ export default function Navbar() {
       <li><Link to="/Service">Services</Link></li>
       <li><Link to="/Todo">Todo</Link></li>
       <Link to="/"><li>Home</li></Link>
+       <Drawer />
       <button onClick={() => navigate('/')} className='bg-amber-500 text-white rounded-2xl p-2'>Get Started</button>
     </ul>
 

@@ -5,6 +5,7 @@ import image from "../assets/5.jpg"
 import Modal from './modal'
 import Grid from './grid'
 import HookUsestate from './HookUsestate'
+import Switch from '../Materials/Switch'
 
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
     <Modal />
   <Grid />
   <HookUsestate />
-  
+  <Switch />
     </>
       
   )
