@@ -1,4 +1,6 @@
 import React from 'react'
+import RollDice from './RollDice';
+import Compliment from './compliment';
 
 // export default function About(props) {
 //   return (
@@ -12,6 +14,8 @@ export default function About({name, age}) {
   return (
     <div>
         <h1>This is About Page {name} and {age} </h1>
+        <RollDice />
+        <Compliment />
     </div>
   )
 }
