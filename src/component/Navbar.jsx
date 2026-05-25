@@ -19,6 +19,7 @@ export default function Navbar() {
       <li><Link to="/About">About</Link></li>
       <li><Link to="/Service">Services</Link></li>
       <li><Link to="/Todo">Todo</Link></li>
+      <li><Link to="/Faq">Faq</Link></li>
       <Link to="/"><li>Home</li></Link>
        <Drawer />
       <button onClick={() => navigate('/')} className='bg-amber-500 text-white rounded-2xl p-2'>Get Started</button>
