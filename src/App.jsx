@@ -2,6 +2,7 @@ import About from "./component/About"
 import Home from "./component/home"
 import Service from "./component/Service"
 import Navbar from "./component/Navbar"
+import Fetchdata from "./component/fetchdata"
 
 import Faq from "./component/Faq"
 import Footer from "./component/Footer"
@@ -29,7 +30,7 @@ function App() {
       <Route path="*" element={<PageNotFound />}/>
     </Routes>
   
-    
+    <Fetchdata />  
       <Footer />
      
  
