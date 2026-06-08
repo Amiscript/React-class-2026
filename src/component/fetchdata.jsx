@@ -3,24 +3,21 @@ import { useState, useEffect } from 'react';
 
 
 
-export default function fetchdata() {
-const [data, setData] = useState(null);
+export default function FetchData() {
+  const [data, setData] = useState([]);
 
-
-useEffect(()=>{
-
-    fetch('https://jsonplaceholder.typicode.com/posts').then((info)=>info.json())
-    .then((result)=>setData(result))
-
-}, [])
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then((info) => info.json())
+      .then((result) => setData(result));
+  }, []);
 
   return (
     <div>
         {data.map((post)=>{
             return (
                 <div key={post.id}>
-                    <h1
-                    >{post.title}</h1>
+                    <h1>{post.title}</h1>
                     <p>{post.body}</p>
                     <p>{post.userId}</p>
                 </div>

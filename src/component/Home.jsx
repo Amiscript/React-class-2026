@@ -6,6 +6,7 @@ import Modal from './modal'
 import Grid from './grid'
 import HookUsestate from './HookUsestate'
 import Switch from '../Materials/Switch'
+import Create from './Create';
 
 
 export default function Home() {
@@ -46,6 +47,7 @@ export default function Home() {
   <Grid />
   <HookUsestate />
   <Switch />
+  <Create />
     </>
       
   )
