@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Deletedata from './Deletedata'
 
 // onchange event => whenever we type something in the input field, onchange event is triggered and it captures the  value of the input field and updates the state variable "todo" with that value using the setTodo function. This allows us to keep track of the current value of the input field in our component's state and use it for further processing, such as adding a new todo item to a list when the "Add Todo" button is clicked.
 // onChange(event) => function(event.target.value)
@@ -30,6 +31,8 @@ const Todo = () => {
       <label htmlFor="">Password</label>
       <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
 
+
+      <Deletedata />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react'
 import RollDice from './RollDice';
 import Compliment from './compliment';
+import Updatedata from './updatedata'
 
 // export default function About(props) {
 //   return (
@@ -16,6 +17,7 @@ export default function About({name, age}) {
         <h1>This is About Page {name} and {age} </h1>
         <RollDice />
         <Compliment />
+        <Updatedata />
     </div>
   )
 }
