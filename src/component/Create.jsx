@@ -43,7 +43,6 @@ function Create() {
         }}>
             <input type="text" placeholder='Title' value={newdata.title} onChange={(e)=> setNewdata({...newdata, title: e.target.value})}  />
             <input type="text" placeholder='Body' value={newdata.body} onChange={(e)=> setNewdata({...newdata, body: e.target.value})}  />
-               
             <button type='submit'>Create Post</button>   
         </form>
 
